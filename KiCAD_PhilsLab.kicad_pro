@@ -263,7 +263,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1320800|533400|c4d42774-041f-42ae-9802-2b2a3e4d5bac|1aa05681-b991-4a93-ac19-f548ee0a3720|/b994b610-7d03-41cc-b586-db511941ed5c|/b994b610-7d03-41cc-b586-db511941ed5c|/b994b610-7d03-41cc-b586-db511941ed5c",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -515,6 +520,52 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "I2C",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(221, 133, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "POWER",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(194, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "SWD",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 132, 132)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "UART",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(132, 0, 132)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgb(0, 194, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -522,7 +573,36 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "/USB*"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "/UART*"
+      },
+      {
+        "netclass": "SWD",
+        "pattern": "/SWD*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I2C*"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+3V3*"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+VBUS*"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+1V35*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -665,7 +745,7 @@
         "uuid": "b994b610-7d03-41cc-b586-db511941ed5c"
       }
     ],
-    "used_designators": "#PWR1-10,C1-6,R1-3,TP1-3,U1,Y1",
+    "used_designators": "#FLG1-4,#PWR1-37,C1-14,D1,FID1-3,H1,J1-2,MH2-4,R1-10,TP1-3,U1-5,X1,Y1",
     "variants": []
   },
   "sheets": [
