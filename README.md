@@ -1,0 +1,1 @@
+# KiCAD_MSPM0G3507SPTR_Board
