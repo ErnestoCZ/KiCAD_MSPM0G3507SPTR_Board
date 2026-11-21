@@ -7,7 +7,7 @@
 
 # Lock files created when a project or schematic is open
 *.kicad_lock
-
+*.lck
 # Backup files
 *.bak
 *.kicad_sch-bak
@@ -16,6 +16,10 @@
 
 # Netlists (if generated in the root directory)
 *.net
+
+# FreeCAD backup files
+*.FCBak
+
 
 # -----------------------------------------
 # Optional: Fabrication & Plot Outputs
